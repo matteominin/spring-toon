@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: springtoon
+
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
