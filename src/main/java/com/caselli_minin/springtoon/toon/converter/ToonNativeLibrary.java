@@ -1,4 +1,4 @@
-package com.caselli_minin.springtoon.toon;
+package com.caselli_minin.springtoon.toon.converter;
 
 import com.sun.jna.Library;
 import com.sun.jna.Native;

@@ -1,4 +1,4 @@
-package com.caselli_minin.springtoon.toon;
+package com.caselli_minin.springtoon.toon.converter;
 
 public class ToonException extends Exception {
 

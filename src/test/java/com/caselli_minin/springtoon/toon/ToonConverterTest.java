@@ -1,5 +1,7 @@
 package com.caselli_minin.springtoon.toon;
 
+import com.caselli_minin.springtoon.toon.converter.ToonConverter;
+import com.caselli_minin.springtoon.toon.converter.ToonException;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -17,9 +19,10 @@ public class ToonConverterTest {
 
     @Test
     public void testDecode() throws ToonException {
-        String toonString = "users[2]{id,name,role}:\n" +
-                "  1,Alice,admin\n" +
-                "  2,Bob,user";
+        String toonString = """
+                users[2]{id,name,role}:
+                  1,Alice,admin
+                  2,Bob,user""";
         String jsonDecoded = ToonConverter.decode(toonString);
         assertNotNull(jsonDecoded);
         System.out.println("Decoded JSON: " + jsonDecoded);

@@ -31,17 +31,16 @@ In order to update the native TOON library, navigate to the `toon-rust` director
 ### In Java Code
 
 ```java
-import com.caselli_minin.springtoon.toon.ToonConverter;
-import com.caselli_minin.springtoon.toon.ToonException;
+import com.caselli_minin.springtoon.toon.converter.ToonConverter;
 
 // JSON to TOON
 String json = "{\"name\":\"Alice\",\"age\":30,\"hobbies\":[\"reading\",\"gaming\"]}";
-String toon = ToonConverter.encode(json);
+        String toon = ToonConverter.encode(json);
 // Result: name: Alice\nage: 30\nhobbies: [reading, gaming]
 
-// TOON to JSON
-String toonData = "name: Alice\nage: 30\nhobbies: [reading, gaming]";
-String jsonResult = ToonConverter.decode(toonData);
+        // TOON to JSON
+        String toonData = "name: Alice\nage: 30\nhobbies: [reading, gaming]";
+        String jsonResult = ToonConverter.decode(toonData);
 ```
 
 ## Troubleshooting
